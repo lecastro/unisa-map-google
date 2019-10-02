@@ -7,7 +7,7 @@ import store from './vuex/store';
 
 Vue.use(VueGoogleMaps, {
     load: {
-        key: env('GOOGLE_MAPS_GEOCODING_API_KEY'),
+        key: process.env.MIX_GOOGLE_MAPS_GEOCODING_API_KEY
     }
 });
 

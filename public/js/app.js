@@ -36913,7 +36913,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.use(vue2_google_maps__WEBPACK_IMPORTED_MODULE_0__, {
   load: {
-    key: env('GOOGLE_MAPS_GEOCODING_API_KEY')
+    key: "AIzaSyBDGcd_5CcmikkWco6yFIPdjM5D6yySY74"
   }
 });
 Vue.component('map-component', __webpack_require__(/*! ./components/GoogleMapComponent.vue */ "./resources/js/components/GoogleMapComponent.vue")["default"]);
