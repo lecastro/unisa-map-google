@@ -1,7 +1,7 @@
 <template>
-<div class="container">
+<div>
 
-    <GmapMap :center="sp" :zoom="7" style="width: 100%; height: 300px">
+    <GmapMap :center="sp" :zoom="7" style="width: 100%; height: 600px">
 
         <gmap-info-window :options="infoOptions" :position="infoPosition" :opened="infoOpened" @closeclick="infoOpened=false">
             <div id='title' style="width: 300px;">

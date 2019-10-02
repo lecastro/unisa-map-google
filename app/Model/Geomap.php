@@ -59,4 +59,8 @@ class Geomap extends Model
         return $this->get();
     }
 
+    public function filterResult($data)
+    {
+        dd($data);
+    }
 }

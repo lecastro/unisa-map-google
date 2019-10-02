@@ -21,4 +21,11 @@ class GeomapController extends Controller
         return response()->json($response);
     }
 
+    public function show($filter)
+    {
+        $response = $this->geomap->filterResult($filter);
+
+        return response()->json($response);
+    }
+
 }

@@ -7,7 +7,7 @@ import store from './vuex/store';
 
 Vue.use(VueGoogleMaps, {
     load: {
-        key: "AIzaSyBc2aG50kFcWyMdpv8i7XGkvYFsL_f_AFU",
+        key: env('GOOGLE_MAPS_GEOCODING_API_KEY'),
     }
 });
 

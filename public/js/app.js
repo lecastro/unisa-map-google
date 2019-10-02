@@ -21140,12 +21140,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
     [
       _c(
         "GmapMap",
         {
-          staticStyle: { width: "100%", height: "300px" },
+          staticStyle: { width: "100%", height: "600px" },
           attrs: { center: _vm.sp, zoom: 7 }
         },
         [
@@ -36914,7 +36913,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 Vue.use(vue2_google_maps__WEBPACK_IMPORTED_MODULE_0__, {
   load: {
-    key: "AIzaSyBc2aG50kFcWyMdpv8i7XGkvYFsL_f_AFU"
+    key: env('GOOGLE_MAPS_GEOCODING_API_KEY')
   }
 });
 Vue.component('map-component', __webpack_require__(/*! ./components/GoogleMapComponent.vue */ "./resources/js/components/GoogleMapComponent.vue")["default"]);
