@@ -1838,8 +1838,8 @@ module.exports = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _assets_unisa_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/unisa.jpg */ "./resources/js/assets/unisa.jpg");
-/* harmony import */ var _assets_unisa_jpg__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_unisa_jpg__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_unisa_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/unisa.png */ "./resources/js/assets/unisa.png");
+/* harmony import */ var _assets_unisa_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_unisa_png__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_partials_SearchGmapMarkerComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/partials/SearchGmapMarkerComponent */ "./resources/js/components/partials/SearchGmapMarkerComponent.vue");
 //
 //
@@ -1899,16 +1899,16 @@ __webpack_require__.r(__webpack_exports__);
         }
       }],
       markerOptions: {
-        url: _assets_unisa_jpg__WEBPACK_IMPORTED_MODULE_0___default.a,
+        url: _assets_unisa_png__WEBPACK_IMPORTED_MODULE_0___default.a,
         size: {
-          width: 60,
-          height: 50,
+          width: 55,
+          height: 45,
           f: 'px',
           b: 'px'
         },
         scaledSize: {
-          width: 50,
-          height: 45,
+          width: 45,
+          height: 40,
           f: 'px',
           b: 'px'
         }
@@ -37155,14 +37155,14 @@ var app = new Vue({
 
 /***/ }),
 
-/***/ "./resources/js/assets/unisa.jpg":
+/***/ "./resources/js/assets/unisa.png":
 /*!***************************************!*\
-  !*** ./resources/js/assets/unisa.jpg ***!
+  !*** ./resources/js/assets/unisa.png ***!
   \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/unisa.jpg?26d760452683967fbbe13600756171a2";
+module.exports = "/images/unisa.png?1fae60710fc301c6852a81ced64c7722";
 
 /***/ }),
 

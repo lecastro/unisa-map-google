@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import mapMarkerIcon from '../assets/unisa.jpg';
+import mapMarkerIcon from '../assets/unisa.png';
 import SearchComponent from "../components/partials/SearchGmapMarkerComponent";
 
 export default {
@@ -60,14 +60,14 @@ export default {
             markerOptions: {
                 url: mapMarkerIcon,
                 size: {
-                    width: 60,
-                    height: 50,
+                    width: 55,
+                    height: 45,
                     f: 'px',
                     b: 'px',
                 },
                 scaledSize: {
-                    width: 50,
-                    height: 45,
+                    width: 45,
+                    height: 40,
                     f: 'px',
                     b: 'px',
                 },
