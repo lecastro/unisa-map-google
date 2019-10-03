@@ -1,8 +1,7 @@
 <template>
 <div>
-
+    <SearchComponent @searchGmapMarker="loadLocations"></SearchComponent>
     <GmapMap :center="sp" :zoom="7" style="width: 100%; height: 600px">
-
         <gmap-info-window :options="infoOptions" :position="infoPosition" :opened="infoOpened" @closeclick="infoOpened=false">
             <div id='title' style="width: 300px;">
                 <h5>{{ this.infoName }}</h5>
@@ -12,7 +11,7 @@
             </div>
         </gmap-info-window>
 
-        <gmap-marker :key="index.id" v-for="(v, index) in universities" :position="v.position" :icon="markerOptions" :title="v.position.title"/>
+        <gmap-marker :key="index.id" v-for="(v, index) in universities" :position="v.position" :icon="markerOptions" :title="v.position.title" />
 
         <gmap-marker v-for="(item, key) in locations" :key="key" :position="getPosition(item)" @click="modalInfor(item, key)" />
 
@@ -22,7 +21,8 @@
 </template>
 
 <script>
-const mapMarkerIcon = require('../assets/unisa.jpg');
+import mapMarkerIcon from '../assets/unisa.jpg';
+import SearchComponent from "../components/partials/SearchGmapMarkerComponent";
 
 export default {
     data() {
@@ -87,7 +87,6 @@ export default {
                     height: -35
                 }
             },
-
         };
     },
 
@@ -100,8 +99,11 @@ export default {
         }
     },
     methods: {
-        loadLocations() {
-            this.$store.dispatch("loadLocations");
+        loadLocations(filter) {
+            this.$store.dispatch("loadLocations", filter);
+        },
+        search(filter) {
+            this.sectionDescription = filter;
         },
         getPosition(marker) {
             return {
@@ -123,7 +125,10 @@ export default {
                 this.infoOpened = true
                 this.infoCurrentKey = key
             }
-        }
+        },
+    },
+    components: {
+        SearchComponent
     },
 };
 </script>

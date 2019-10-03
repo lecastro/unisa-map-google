@@ -59,8 +59,8 @@ class Geomap extends Model
         return $this->get();
     }
 
-    public function filterResult($data)
+    public function filterResult($filter)
     {
-        dd($data);
+        return $this->where('section_description', $filter)->get();
     }
 }
