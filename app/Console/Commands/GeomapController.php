@@ -12,7 +12,7 @@ class GeomapController extends Command
      *
      * @var string
      */
-    protected $signature = 'geomaps:cadastar';
+    protected $signature = 'geomaps:cadastrar';
 
     /**
      * The console command description.

@@ -35,7 +35,7 @@ h4 {
     text-align: center;
 }
 
-#search{
+#search {
     display: flex;
     justify-content: center;
     align-items: center;
