@@ -12,25 +12,45 @@
 * banco de dados mysql
 * git
 
-## *Instalação...* 
+## *Instalação* 
 
+Primeiro passo, clonar o projeto:
+``` bash
+# Clonar
 git clone https://github.com/lecastro/unisa-map-google.git
 
-* composer update
+# Acessar
+cd unisa-map-google
+```
+## Configuração - Backend
 
-* npm install
+``` bash
+# Instalar dependências do projeto
+composer install
 
-* php artisan migrate 
+# Configurar variáveis de ambiente
+cp .env.example .env
+php artisan key:generate
 
-* php artisan serve
+# Configurar banco de dados
+php artisan migrate 
 
-* npm run dev || watch
+# Essa comando manda uma lista de endereços para api do google maps e atualiza os campos latitude e longitude
 
-* geomaps:cadastrar 
-<p>    
-Essa comando manda uma lista de endereços para api do google maps e atualiza os campos latitude e longitude
-</p>
+geomaps:cadastrar
+```
 
+## Configuração - Frontend
+``` bash
+# Atualizar dependências
+npm install
+
+# Rodar em ambiente local localhost:8080
+npm run dev
+
+# Rodar em ambiente de produção
+npm run build
+```
 ## *Descrição do projeto...*
 
 ## *Back-end*
