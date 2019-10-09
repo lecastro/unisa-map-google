@@ -1,4 +1,5 @@
 <template>
+
 <div class="container">
     <h4>Geolocalização google maps.</h4>
     <div id="search">
@@ -7,7 +8,6 @@
             <option v-for="(item ,key) in sectionDescription" :key="key">{{item}}</option>
         </select>
     </div>
-
 </div>
 </template>
 

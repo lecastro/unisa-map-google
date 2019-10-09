@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import locations from './modules/locations/locations.js';
+import locations from './modules/locations/index.js';
 
 Vue.use(Vuex);
 
